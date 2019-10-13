@@ -1,0 +1,25 @@
+table HelloRequest {
+  content:string;
+}
+
+table HelloResponse {
+  content:string;
+}
+
+table AddRequest {
+  count:int32;
+}
+
+table AddResponse {
+  current_count:int32;
+}
+
+table MyRequest {
+  hellorequest:HelloRequest;
+  helloresponse:HelloResponse;
+
+  addrequest:AddRequest;
+  addresponse:AddResponse;
+}
+
+root_type MyRequest;
